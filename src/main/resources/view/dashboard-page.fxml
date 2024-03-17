@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="700.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm.Controller.DashboardPageController">
+    <children>
+        <AnchorPane fx:id="root" prefHeight="700.0" prefWidth="300.0" style="-fx-background-color: #E1C16E;">
+            <children>
+                <JFXButton fx:id="btnBookManagement" layoutX="17.0" layoutY="216.0" onAction="#btnBookManagementOnAction" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #353935;" text="Book Management" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                    </font></JFXButton>
+                <JFXButton fx:id="btnUserManagement" layoutX="17.0" layoutY="275.0" onAction="#btnUserManagement" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #353935;" text="User Management" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                    </font></JFXButton>
+                <JFXButton fx:id="btnBranchManagement" layoutX="17.0" layoutY="158.0" onAction="#btnBranchManagementOnAction" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #353935;" text="Branch Management" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                    </font></JFXButton>
+                <JFXButton fx:id="btnSettings" layoutX="17.0" layoutY="335.0" onAction="#btnBorrowOnAction" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #353935;" text="Borrow Book" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                    </font></JFXButton>
+                <Line endX="174.0" endY="7.62939453125E-6" layoutX="115.0" layoutY="86.0" startX="-100.0" />
+                <Line endX="174.0" endY="7.62939453125E-6" layoutX="112.0" layoutY="424.0" startX="-100.0" />
+                <Circle fill="WHITE" layoutX="43.0" layoutY="41.0" radius="35.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" />
+                <Label fx:id="lblUserName" layoutX="96.0" layoutY="24.0" prefHeight="37.0" prefWidth="186.0" text="User Name">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Hyperlink fx:id="hypLogout" layoutX="94.0" layoutY="55.0" onAction="#hypLogoutOnAction" text="Logout" />
+            <JFXButton fx:id="btnDashBoardManagement" layoutX="17.0" layoutY="99.0" onAction="#btnDashBoardManagementOnAction" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #353935;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="50.0" fitWidth="53.0" layoutX="16.0" layoutY="16.0">
+               <image>
+                  <Image url="@../images/userIcon.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="pane" layoutX="300.0" layoutY="46.0" prefHeight="654.0" prefWidth="1200.0" />
+        <Label fx:id="lblDate" layoutX="308.0" layoutY="11.0" text="2024-03-13">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblTime" layoutX="1418.0" layoutY="11.0" text="08-00 AM">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
